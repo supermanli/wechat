@@ -1,0 +1,136 @@
+
+/* 内容 搜索 */
+.container .search {
+  width: 735rpx;
+  height: 65rpx;
+  padding: 12.5rpx 0 12.5rpx 15rpx;
+  background: black;
+}
+/* 搜索问题框 */
+.container .search-left {
+  flex: 7;
+  background: black;
+  text-align: left;
+  margin-right: 14rpx;
+}
+
+.container .search-left input {
+  /* display: inline-block; */
+  display: flex;
+  height: 65rpx;
+  font-size: 26rpx;
+  line-height: 65rpx;
+  margin-top: 0;
+  align-items: center;
+  float: left
+}
+
+.search-placeholder {
+  color: white;
+  line-height: 65rpx;
+}
+
+.container .search .search-left image {
+  display: flex;
+  width: 35rpx;
+  height: 35rpx;
+  padding: 15rpx 15rpx 15rpx 15rpx;
+  float: left;
+}
+
+.container .search .search-right {
+  flex: 1.7;
+  width: 80rpx;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+  color: white;
+}
+/* 提问图片 */
+.container .search .search-right image {
+  width: 50rpx;
+  height: 50rpx;
+  padding: 5rpx;
+  display: inline-block;
+  margin-right: 10rpx;
+}
+
+.container {
+  padding: 0;
+  font-size: 14rpx;
+  background: #f0f4f3;
+  color:white;
+}
+/* 展示标题 */
+.toshowtitle{
+  color: blue;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  text-decoration:underline;
+  margin-top: 10px;
+}
+/* 展示内容 */
+.toshowcontent{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  margin-top: 3px;
+}
+.nicknameandtime{
+  font-size: 32rpx;
+  color: gray;
+}
+.err{
+  text-align: center;
+  margin-top: 200rpx;
+}
+/* 搜索框 */
+input{
+  width: 75%;
+}
+/* 头像 */
+.nick_image {
+  overflow: hidden;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*评论列表*/
+
+.list_block {
+  /* padding: 5px; */
+  margin-top: 5px;
+  /* margin-right: 5px; */
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid #dadada;
+  border-radius: 10px;
+  border-bottom: 1px solid #dadada;
+}
+
+/*问题列表*/
+
+.question_title {
+  /* background-color: gray; */
+  margin-top: 10px;
+  margin-left: 7px;
+  /* border: 1px solid #dadada; */
+}
+
+/*问题内容*/
+
+.question_content {
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+/*时间*/
+
+.time {
+  font-size: 12px;
+}

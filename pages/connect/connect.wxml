@@ -1,0 +1,26 @@
+<!--pages/connect/connect.wxml-->
+<!-- 团队介绍 -->
+<view class="main_view" style="height:{{viewHeight}}px;" >
+  <view class="team_view">
+    <view class='text_view'>
+      <label>开发团队：</label>
+      <text>造梦三角洲</text>
+    </view>
+    <view>
+      <label>开发人员：</label>
+      <text>李超、华成尧、纪林斌</text>
+    </view>
+    <view>
+      <label>QQ:</label>
+      <text selectable="true"> 2235152282</text>
+    </view>
+    <view>
+      <label>微信、电话：</label>
+      <text selectable="true"> 15239457293</text>
+    </view>
+    <view>
+      <label>邮箱：</label>
+      <text selectable="true">2235152282@qq.com</text>
+    </view>
+  </view>
+</view>

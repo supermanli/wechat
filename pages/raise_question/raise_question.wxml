@@ -1,0 +1,33 @@
+<scroll-view scroll-y="true" class="container" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+  <!--搜索框-->
+  <view class="search flex-wrp">
+    <view class="search-left flex-item">
+      <image src="../../images/search.png"></image>
+      <input placeholder="请输入关键字搜索" name="input" placeholder-class="search-placeholder" bindinput='getvalue' bindconfirm='search' confirm-type='search' value='{{input}}' />
+    </view>
+    <view class="search-right flex-item" bindtap="bindAskTap">
+      <image class="ask" src="../../images/ask.png"></image>
+      <text class="ask-text">提问</text>
+    </view>
+  </view>
+</scroll-view>
+<!-- 问题展示 -->
+<view wx:if="{{list.length!=0}}">
+  <block wx:for="{{list}}" wx:key="id">
+    <navigator url='../showsearch/showsearch?id={{item.id}}&question_title={{item.question_title}}&question_content={{item.question_content}}&image={{item.user_image_url}}&time={{item.time}}&nickname={{item.user_nick_name}}'>
+      <view class="list_block">
+        <view class="question_title">
+          <image src='{{item.user_image_url}}' class='nick_image' />
+          <text> {{item.user_nick_name}}：</text>
+          <text selectable='true'>{{item.question_title}} </text>
+          <text class="time">{{item.time}}</text>
+        </view>
+        <view class="question_content">
+          <text selectable='true'>{{item.question_content}}</text>
+        </view>
+      </view>
+    </navigator>
+  </block>
+</view>
+<!-- 找不到问题 -->
+<view wx:else class='err'>{{notfound}}</view>

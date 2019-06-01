@@ -1,0 +1,18 @@
+<view class="section">
+  <form bindsubmit="submitNewQuestion">
+    <view class="section">
+      <!-- 选择框 -->
+      <view class="section__title">
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="picker">
+            选择分类：{{array[index]}}
+          </view>
+        </picker>
+      </view>
+    </view>
+    <!-- 描述框 -->
+    <textarea class="textarea" placeholder="添加描述" name="textarea" value='{{ccontent}}' bindinput="getcontent" data-index="1" maxlength="1500" />
+    <!-- 发送按钮 -->
+    <button class="button" form-type="submit" bindtap='addq'> 发起提问 </button>
+  </form>
+</view>

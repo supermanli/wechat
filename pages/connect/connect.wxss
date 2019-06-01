@@ -1,0 +1,12 @@
+/*team_view*/
+
+.team_view {
+  top: 50%;
+  margin-left: 15%;
+}
+
+/* text_view */
+
+.text_view {
+  padding-top: 50%;
+}

@@ -1,0 +1,22 @@
+<view class='main-view'>
+  <view class="picture_view">
+  <!-- 头像 -->
+    <view class='userAvatarUrl'>
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <!-- 昵称 -->
+    <view>
+      <open-data class="userNickName" type="userNickName"></open-data>
+    </view>
+  </view>
+  <!-- 个人信息 -->
+  <view class="button_view">
+    <block>
+      <view>
+        <button class="my_btn" wx:for-items="{{userListInfo}}" wx:key='id' bindtap='goToQuestion' data-text="{{item.text}}">
+          {{item.text}}
+        </button>
+      </view>
+    </block>
+  </view>
+</view>

@@ -1,0 +1,1 @@
+<map id="map" scale="16" longitude="{{centerX}}" latitude="{{centerY}}" bindregionchange="regionchange" show-location style="width: 100%; height: {{viewHeight}}px;"> </map>

@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/me/me",
+    "pages/map/map",
+    "pages/question/question",
+    "pages/help/help",
+    "pages/answer/answer",
+    "pages/connect/connect",
+    "pages/raise_question/raise_question",
+    "pages/writeq/writeq",
+    "pages/showsearch/showsearch",
+    "pages/answer/login/login"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "debug": true,
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#233333",
+    "navigationBarTitleText": "新生服务平台",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#ffa589",
+    "backgroundColor": "#eeeeee",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/TabbarHomeN.png",
+        "selectedIconPath": "images/TabbarHomeS.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/raise_question/raise_question",
+        "iconPath": "images/questionN.png",
+        "selectedIconPath": "images/questionS.png",
+        "text": "问题"
+      },
+      {
+        "pagePath": "pages/map/map",
+        "iconPath": "images/map.png",
+        "selectedIconPath": "images/locateHL.png",
+        "text": "地图"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "iconPath": "images/TabbarUserN.png",
+        "selectedIconPath": "images/TabbarUserS.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

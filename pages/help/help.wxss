@@ -1,0 +1,40 @@
+/* 提问题主视图 */
+
+.question_view {
+  text-align: center;
+}
+
+/* 简述问题样式 */
+
+.input_text {
+  margin: 17rpx;
+  padding: 2%;
+  border-left: 5%;
+  border-right: 5%;
+  border-style: solid;
+  border-color: gray;
+  border-radius: 10rpx;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+/* 详述问题样式 */
+
+.describe_textarea {
+  width: 90%;
+  margin: 17rpx;
+  padding: 2%;
+  border-left: 5%;
+  border-right: 5%;
+  border-style: solid;
+  border-color: gray;
+  border-radius: 10rpx;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+/* 提交按钮样式 */
+
+.submit {
+  font-size: 35rpx;
+  margin-left: 40%;
+  margin-right: 40%;
+}

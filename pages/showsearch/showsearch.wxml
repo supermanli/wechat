@@ -1,0 +1,50 @@
+<!--pages/showsearch/showsearch.wxml-->
+<!-- 问题展示 -->
+<view class='boder'>
+  <view class='setting'>
+    <image class='image' src='{{image}}'></image>
+    <view class='move'>
+    <text class='name'>{{nickname}}</text>
+    <view><text class='time'>{{time}}</text></view>
+    </view>
+  </view>
+  <view class='content'>{{question_content}}</view>  
+</view>
+
+<view>
+  <text>\n</text>
+  <text>全部回复</text>
+</view>
+<!-- 刚回复内容展示 -->
+<view wx:if="{{obj.length!=0}}" wx:for="{{obj}}" wx:key class="boder">
+  <view class='setting'>
+    <image class='image' src='{{avatar}}'></image>
+    <view class='move'>
+      <text class='name'>{{name}}</text>
+      <view>
+        <text class='time'>刚刚</text>
+      </view>
+      <view class='content_s'>{{item}}</view>
+    </view>
+  </view>
+</view>
+<!-- 全部已回复内容展示 -->
+<view wx:for="{{list}}" class='boder' wx:key>
+  <view class='setting'>
+    <image class='image' src='{{item.user_image_url}}'></image>
+    <view class='move'>
+    <text class='name'>{{item.user_nick_name}}</text>
+    <view><text class='time'>{{item.time}}</text></view>
+    </view>
+  </view>
+  <view class='comment'>{{item.comment_content}}</view>
+</view>
+<!-- 换行 -->
+<view>
+  <text>\n\n</text>
+</view>
+<!-- 评论 -->
+<view class='bottom_view'>
+<input placeholder="就不说一句吗？" class='input' value='{{inputvalue}}' bindinput="getcommmet" name="comment"></input>
+<button class='send' bindtap='send'>发送</button>
+</view>

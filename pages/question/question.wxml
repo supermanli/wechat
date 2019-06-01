@@ -1,0 +1,17 @@
+<scroll-view scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}}px;" class="list" bindscrolltolower="bindDownLoad" bindscrolltoupper="topLoad" bindscroll="scroll">
+  <block wx:for-items="{{tArray}}" wx:key="id">
+    <navigator url='../showsearch/showsearch?id={{item.id}}&question_title={{item.question_title}}&question_content={{item.question_content}}&image={{item.user_image_url}}&time={{item.time}}&nickname={{item.user_nick_name}}'>
+      <view class="list_block">
+        <view class="question_title">
+          <image src='{{item.user_image_url}}' class='nick_image' />
+          <text> {{item.user_nick_name}}：</text>
+          <text selectable='true'>{{item.question_title}} </text>
+          <text class="time">{{item.time}}</text>
+        </view>
+        <view class="question_content">
+          <text selectable='true'>{{item.question_content}}</text>
+        </view>
+      </view>
+    </navigator>
+  </block>
+</scroll-view>

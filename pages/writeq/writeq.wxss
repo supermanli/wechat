@@ -1,0 +1,44 @@
+/* pages/writeq/writeq.wxss */
+
+.section .input {
+  font-size: 35rpx;
+  margin: 5% 8% 0% 8%;
+  padding: 2% 0 2% 2%;
+  background-color: white;
+  width: 80%;
+  border: 5rpx solid black;
+  border-radius: 10rpx;
+  /* height: 600rpx; */
+}
+
+.section__title {
+  width: 80%;
+  margin: 5% 8% 0% 8%;
+  padding: 2% 0 2% 2%;
+  font-size: 35rpx;
+  border: 5rpx solid black;
+  border-radius: 10rpx;
+}
+
+.textarea {
+  font-size: 35rpx;
+  margin: 5% 8% 0% 8%;
+  padding: 2% 0 2% 2%;
+  background-color: white;
+  width: 80%;
+  height: 600rpx;
+  border: 5rpx solid black;
+  border-radius: 10rpx;
+}
+/* 选择按钮 */
+.section .button {
+  /* margin: 20%; */
+  border-radius: 40rpx;
+  border: 3rpx solid black;
+  background-color: black;
+  color: white;
+  position: fixed;
+  bottom: 5%;
+  margin: 0 10%;
+  width: 80%;
+}

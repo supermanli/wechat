@@ -1,0 +1,20 @@
+<view class='main_view'>
+  <!-- 简单描述你遇到的问题的 view -->
+  <view class='question_view'>
+    <text class="question_briefly">
+      简单描述你遇到的问题
+    </text>
+  </view>
+  <view>
+    <input class='input_text' auto-focus bindinput="gettitle" value="{{ctitle}}" data-index="0"></input>
+  </view>
+  <!-- 详细描述你遇到的问题的view -->
+  <view class='question_view'>
+    <text>详细描述你遇到的问题</text>
+  </view>
+  <view>
+    <textarea class='describe_textarea' bindinput="getcontent" value="{{ccontent}}" data-index="1" maxlength="1500"></textarea>
+  </view>
+  <!-- 提交按钮 -->
+  <button class="submit" form-type="submit" bindtap='submint_btn'>提交</button>
+</view>

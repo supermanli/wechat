@@ -1,0 +1,112 @@
+/* 头像 */
+.image{
+  overflow:hidden;
+  display: block;
+  width: 80rpx;
+  height: 80rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  border: 1px solid rgb(122, 158, 236);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  word-break: break-all;
+}
+/* 昵称 */
+.name{
+  margin-top: 40rpx;
+  margin-right: 20rpx;
+  position: relative;
+  z-index: 1;
+}
+/* 时间 */
+.time{
+  margin-top: 90rpx;
+  font-size: 28rpx;
+  margin-left: 10rpx;
+  position: relative;
+  z-index: 2;
+}
+/* 边框 */
+.boder{
+  /* padding: 5px; */
+  margin-top: 5px;
+  /* margin-right: 5px; */
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid #dadada;
+  border-radius: 10px;
+  border-bottom: 1px solid #dadada;
+}
+.setting{
+  display: flex;
+  /* border-bottom: 1px solid #dadada; */
+}
+/* 内容 */
+.content{
+  padding-top: 5px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  margin-right: 20px;
+}
+/* 刚回复的内容 */
+.content_s{
+  padding-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 20px;
+  margin-left: -33px;
+}
+
+.but{
+  line-height: 150%;
+  width: 20%;
+  margin-left: 247px;
+  margin-top: 5px;
+  text-align: center;
+  color: white;
+  background: rgb(0, 110, 255);
+}
+/* 输入框 */
+.input{
+  margin-left: 5px;
+  margin-bottom: 5px;
+  border: lightgrey;
+  border-style: solid;
+  border-width: 1px;
+  width: 75%;
+  position: fixed;
+  bottom: 2rpx;
+  opacity:1;
+  border-radius: 5px;
+  height: 72rpx;
+  color: rgb(0, 0, 0);
+}
+/* 发送按钮 */
+.send{
+  margin-right: 5px;
+  margin-bottom: 5px;
+  width: 20%;
+  font-size: smaller;
+  background:rgb(0, 68, 255);
+  color: white;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 2rpx;
+  right: 0rpx;
+  /* background-color: white; */
+}
+/* 评论 */
+.comment{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  /* background: gainsboro; */
+}
+.move{
+  margin-top: 10rpx;
+}
+.move2{
+  margin-bottom: 40rpx
+}
+/* 评论主视图 */
+.bottom_view{
+  color: grey;
+}

@@ -1,0 +1,19 @@
+<!-- 显示自己答案的 scroll-view -->
+<scroll-view scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}}px;" class="list" bindscrolltolower="bindDownLoad" bindscrolltoupper="topLoad" bindscroll="scroll">
+  <block wx:for-items="{{tArray}}" wx:key="id">
+    <view class="list_block">
+      <view class="question_title">
+        <!-- 用户头像 -->
+        <image src='{{item.user_image_url}}' class='nick_image' />
+        <!-- 用户昵称 -->
+        <text> {{item.user_nick_name}}：</text>
+        <!-- 回答问题时间 -->
+        <text class="time">{{item.time}}</text>
+      </view>
+      <!-- 回答问题的内容 -->
+      <view class="question_content">
+        <text selectable='true'>{{item.comment_content}}</text>
+      </view>
+    </view>
+  </block>
+</scroll-view>
